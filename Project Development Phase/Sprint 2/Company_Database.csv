@@ -1,0 +1,58 @@
+S.No,Company Name,Role,Ex,Skill,Vacancy,Stream,Job Location,Salary
+1,Zoho Corporation,Software Developer,0,"Java,C++,Python",20,Any Stream,"Chennai,Bangalore",7.5
+,Zoho Corporation,"UI,UX Designer",0,"Figma,XD,Photoshop",15,Any Stream,"Chennai,Bangalore",6
+,Zoho Corporation,Web developer,0,"HTML,CSS,JS,React JS",18,Any Stream,"Chennai,Bangalore",6
+2,Virtusa,Software Developer,1,"Java,C++,Python",18,Any Stream,"Chennai,Mumbai,Hyderabad",5.6
+,Virtusa,Data Scientist,3,"Python,Machine Learning",12,Any Stream,"Chennai,Mumbai,Hyderabad",5.6
+,Virtusa,.Net Developer,0,"C#,ASP.Net",14,Any Stream,"Chennai,Mumbai,Hyderabad",5.6
+3,Aspire Systems,Web Developer,2,"HTML,CSS,JS",50,"IT,CSE,ECE,EEE,MECH",Chennai,4.5
+,Aspire Systems,Software Developer,0,"Java,C++,Python",20,"IT,CSE,ECE,EEE,MECH",Chennai,4.5
+,Aspire Systems,Senior Software Developer,0,"java,JS,C#,SQL Server, Oracle, Mongo",25,"IT,CSE,ECE,EEE,MECH",Chennai,4.5
+4,DXC Tech,Software Developer,1,"Java,C,C++,Angular",20,"IT,CSE,ECE,EEE",Coimbatore,4
+5,VVDN,Software Developer,1,"Java,C,Python",15,"IT,CSE,ECE,EEE","Pollachi,Chennai ,Bangalore ,Kochi",4.8
+,VVDN,Embedded System Engineer,1,"Embedded C,C,C++",10,"IT,CSE,ECE,EEE","Pollachi,Chennai ,Bangalore ,Kochi",4.4
+6,Zuci Systems,Database Administrator,2,"C#, Asp.Net, Vb.Net",22,"IT,CSE,ECE,EEE",Chennai,4.3
+,Zuci Systems,Full stack developer,3,"Java,AngularJS,Spring Boot",14,"IT,CSE,ECE",Chennai,4.3
+7,Hexaware Technologies,Software Developer,0,"C#, ASP.NET MVC, SQL",15,"IT,CSE,ECE","Chennai,Bangalore",4
+8,Ami,Firmware Engineer,1,"Embedded C,C,Fortran",25,"IT,CSE,ECE,EEE",Chennai,5
+9,Mphasis,Web Developer,0,Java and Angular,18,"IT,CSE,ECE","Hyderabad, Pune, Chennai.",3.6
+10,TCS,Senior Software Developer,2,"Cobol, java,JS,C#",20,"IT,CSE,ECE,EEE,MECH","Chennai,Mumbai,Hyderabad",4.5
+11,CTS,Software Developer,2,"Python,COTS Products(BFS Ast&Wlth)",15,"IT,CSE,ECE,EEE,MECH","Chennai,Bangalore",5
+12,RAPL Technology,Web Developer,0,"HTML,CSS,JS,React JS",22,"IT,CSE,ECE,EEE,MECH",Bangalore,5.6
+13,Wipro,Full stack developer,1,"Java 7, JS jQuery, CSS and HTML5",40,"IT,CSE,ECE","Chennai,Bangalore",4.5
+14,Hcl,Senior Software Developer,2,"java,JS,C#,Mongo",20,"IT,CSE,ECE,EEE,MECH","Chennai,Bangalore",4.5
+15,Lumen,Web Developer,2,"HTML,CSS,JS,React JS",5,"IT,CSE,ECE,EEE",Bangalore,4.5
+16,HTC,Data Scientist,0,"JuPyteR, Azure ML ,MS SQL Server",12,"IT,CSE,ECE,EEE,MECH","Chennai,Bangalore",4
+18,Infosys,Senior Software Developer,4,"java,JS,C#,SQL Server, Oracle",6,"IT,CSE,ECE","Chennai,Bangalore",4.8
+19,Accenture,Full stack developer,1,"Node.js,Javascript, Typescript, React Js,C#",12,"IT,CSE,ECE","Chennai,Bangalore",4.4
+20,Quest,"UI,UX Designer",2,"Figma,XD,Photoshop",30,"IT,CSE,ECE","Chennai,Mumbai,Hyderabad",4.3
+21,Tech Mahindra,Web Developer,1,"HTML,CSS,JS,React JS",12,"IT,CSE,ECE,EEE,MECH","Chennai,Mumbai,Hyderabad",4.3
+22,Fujitsu,Senior Software Developer,3,"Python,Java 11, C#",15,"IT,CSE,ECE,EEE",Bangalore,4
+23,Softsquare,Full stack developer,0,"Java 7, JS jQuery, CSS and HTML5",20,"IT,CSE,ECE",Chennai,5
+24,Adidhi,Data Scientist,0,"JuPyteR, Tensorflow ,Python , Azure ML ,MS SQL Server",14,"IT,CSE,ECE,EEE",Bangalore,3.6
+25,CEI America,Senior Software Developer,4,"Azure DevOps, Java,C,C++,Python",18,"IT,CSE,ECE,EEE,MECH",Chennai,4.5
+26,Link Logistics,Web Developer,1,"HTML,CSS,JS,React JS",20,"IT,CSE,ECE,EEE","Chennai,Delhi",5
+27,Atlassian,"UI,UX Designer",1,"Figma,XD,Photoshop",12,"IT,CSE,ECE,EEE,MECH",Bangalore,4.3
+28,Webberax,Senior Software Developer,2,"Azure ML ,SQL,Python,Java 11, C#,C#",35,"IT,CSE,ECE",Chennai,4.3
+29,Concentrix,Database Administrator,1,"MY SQL, MS SQL,T-SQL,MongoDB scaling",10,"IT,CSE,ECE,EEE",Bangalore,4
+30,Embed UR Systems,Data Scientist,2,"Python , Azure ML ,MS SQL Server",20,"IT,CSE,ECE,EEE,MECH",Chennai,5
+31,Pepul,Web Developer,0,"HTML,CSS,JS,React JS",10,"IT,CSE,ECE,EEE",Chennai,3.6
+32,Info tech,Senior Software Developer,1,"Azure DevOps, Java,C,C++,Python,SQL Server, Oracle",15,"IT,CSE,ECE,EEE","Chennai,Bangalore",4.5
+33,HData Systems,"UI,UX Designer",2,"Figma,XD,Photoshop",25,"IT,CSE,ECE",Ahmedabad,5
+34,IBM,Full stack developer,3,"Java 7, ReactJS,JS jQuery, CSS and HTML5,Js,",10,"IT,CSE,ECE",Bangalore,5.6
+35,Microsoft,Database Administrator,4,"C#, Asp.Net,Vb.Nett",8,"IT,CSE,ECE,EEE,MECH",Bangalore,10
+36,Facebook,Web Developer,4,"HTML,CSS,JS,React JS",20,"IT,CSE,ECE",Gurugram,11
+37,Google,.Net Developer,5,"C#, Visual Basic .NET,HTML5,CSS3,ASP.NET,",4,"IT,CSE,ECE,EEE","Hyderabad,Bangalore",10
+38,Amazon,Full stack developer,2,"Java,C,C++,Python,SQL Server, Oracle",5,"IT,CSE,ECE",Bangalore,10
+39,Byjus,Web Developer,2,"HTML,CSS,JS,React JS",7,"IT,CSE,ECE,EEE","Chennai,Bangalore",4.3
+40,Renault,Full stack developer,1,"Java,C,C++,Python,SQL Server, Oracle",40,"IT,CSE,ECE,EEE,MECH",Chennai,4
+41,Oracle Cooperation,.Net Developer,1,"MY SQL,C#, Visual Basic .NET,HTML5,CSS3",10,"IT,CSE,ECE,EEE","Chennai,Bangalore",5
+42,Sales Force,Database Administrator,0,"C#, Asp.Net,Vb.Nett,MongoDB scaling",12,"IT,CSE,ECE,EEE","Hyderabad,Bangalore,Gurugram",3.6
+43,Adobe,Web Developer,1,"HTML5,CSS,JS,React JS,Angular",22,"IT,CSE,ECE,EEE","Bangalore,Noida",4.5
+44,ServiceNow,Database Administrator,2,"C#, Asp.Net,Vb.Nett",8,"IT,CSE,ECE,EEE","Hyderabad,Bangalore,Mumbai",5
+45,Deloitte,Full stack developer,0,"Java,C,C++,Python,SQL Server, Oracle",25,"IT,CSE,ECE","Chennai ,Bangalore ,Kochi",5.6
+46,Capgemini,Web Developer,1,"HTML,CSS,JS,React JS",25,"IT,CSE,ECE,EEE,MECH","Chennai ,Bangalore ,Salem,Coimbatore",4.5
+47,UST Global,Full stack developer,2,"Java,C,C++,Python,SQL Server, Oracle",20,"IT,CSE,ECE,EEE",Kochi,4.5
+48,MIndTree,Senior Software Developer,0,"Azure DevOps, Java,C,C++,Python,SQL Server, Oracle",10,"IT,CSE,ECE","Chennai ,Bangalore ,Coimbatore",4.5
+49,Freshworks,Web Developer,2,"HTML,CSS,Angular,React JS,JS",18,"IT,CSE,ECE","Chennai,Bangalore",4
+50,Cisco,Database Administrator,4,"C#, Asp.Net, Vb.Net,T-SQL",5,"IT,CSE,ECE,EEE","Chennai,Bangalore,Mumbai,Gurugram",8

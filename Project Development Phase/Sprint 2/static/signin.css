@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.2;
+}
+
+.glass-card {
+
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 400px;
+    margin: 75px auto;
+    padding: 30px 30px;
+    background-color: transparent;
+    color: aliceblue;
+}
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    background-color: transparent !important;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+button.btn.btn-primary {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+button.btn.btn-primary-google {
+    background-color: rgb(255 0 0);
+    border-color: rgba(234, 59, 59, 0.79);
+    color: aliceblue;
+    width: 100%;
+}
+
+.card-footer {
+    font-weight: bolder;
+    padding: 0.75rem 1.25rem;
+    background-color: transparent !important;
+    border-top: 1px solid rgba(0, 0, 0, .125);
+}
+
+.remember {
+    padding-left: 1em;
+}
+
+a {
+    color: #000000ed
+}
+
+form {
+    margin-block-end: 0em;
+}
+
+.h-100 {
+    height: 110% !important;
+}

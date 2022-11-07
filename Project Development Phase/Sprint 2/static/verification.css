@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+.jumbotron.text-center {
+    height: 8em;
+}
+
+* {
+    font-family: 'Playfair Display', serif;
+    color: aliceblue;
+}
+
+input.btn.btn-primary.btn-lg.col-md-2.col-sm-2 {
+    width: 30%;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 5px 5px;
+    color: black;
+}
+
+input.form-control.col-md-6 {
+    width: 50%;
+    margin-right: 1em;
+    display: inline;
+    padding-top: 6px;
+    padding-bottom: 4px;
+}
+
+input[type="number" i] {
+    font-size: x-large;
+    text-align: center;
+    color: black;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+div#notes {
+    margin-top: 2%;
+    width: 98%;
+    margin-left: 1%;
+}
+
+@media (min-width: 991px) {
+    .col-md-9.col-sm-12 {
+        margin-left: 12%;
+    }
+}
+
+
+body {
+
+    background: url('Images/Building.jpg') no-repeat center;
+    width: 400px;
+    margin: 75px auto;
+    padding: 30px 30px;
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur(1.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+li {
+    font-size: x-large;
+    margin-bottom: 30px;
+}
+
+ul {
+
+    margin-bottom: 70px
+}
+
+h2 {
+    color: black
+}
+
+h4 {
+    color: black;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+a {
+    color: black;
+}
+
+.otp {
+    font-size: larger;
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+}
+
+.resend {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}

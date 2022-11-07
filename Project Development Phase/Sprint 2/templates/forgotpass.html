@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reset Password</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='forgotpass.css')}}">
+    <script src="../static/js/validation.js"></script>
+</head>	
+<body>
+
+<div class="form-container">
+    <form action="/forgotpass" onsubmit="return validatepassword()"method="POST" class="form-wrap">
+        <h1>Reset Password<h1>
+        {% if i == 1 %}
+        <div class="form-box">
+            <h2>OTP:</h2>
+            <input type="number" placeholder="Enter OTP" name="OTP" required="required"/>
+        </div>
+        <div class="form-submit">
+            <input type="submit" value="Send"/>
+        </div>
+        <p>{{msg}}</p><br>
+        {% elif i == 2 %}
+        <div class="form-box">
+            <h2>New Password:</h2>
+            <input type="password" placeholder="New Password" name="password" id="password" onkeyup="validatepassword()" required="required"/>
+            <div class="box">
+                <small id="password-error"></small>
+            </div>
+        </div>
+        <div class="form-box">
+            <h2>Confirm Password:</h2>
+            <input type="password" placeholder="Confirm Password" name="confirm_password" id='cpassword' onkeyup="validatepassword()" required="required"/>
+            <div class="box">
+                <small id="cpassword-error"></small>
+            </div>
+        </div>
+        <div class="form-submit">
+            <input type="submit" value="Send"/>
+        </div>
+        {% else %}
+        <div class="form-box">
+            <h2>Email:</h2>
+            <input type="email" placeholder="Enter Email" name="email" required="required"/>
+        </div>
+        <div class="form-submit">
+            <input type="submit" value="Send"/>
+        </div>
+        <p>{{msg}}</p><br>
+        {% endif %}
+    </form>
+</div>
+
+</body>
+</html>	

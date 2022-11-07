@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.navbar-wrapper {
+  width: 100%;
+  text-decoration: double;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+
+.home {
+  color: aliceblue;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('Images/Building.jpg') no-repeat center;
+  height: 100vh;
+  background-position: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.Searchbar {
+  width: 15%;
+  height: 5%;
+}
+
+.Searchbar {
+  margin-top: 7%;
+  left: 15%;
+}
+
+.topbar {
+  position: static;
+  position: fixed;
+  top: 8.5%;
+  background-color: rgb(66, 66, 130);
+  width: 100%;
+  height: 9%;
+  z-index: 1;
+}
+
+.searchbox {
+  border-style: solid;
+  border-color: rgb(66, 66, 130);
+  box-shadow: 0 0 8px 1px #48abe0;
+  position: absolute;
+  top: 15%;
+  left: 28%;
+  width: 33%;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.submitbtn {
+  position: absolute;
+  border-style: solid;
+  border-color: rgb(66, 66, 130);
+
+  box-shadow: 0 0 8px 1px #48abe0;
+  top: 15%;
+  left: 63%;
+  width: 6%;
+  border-radius: 20px;
+  padding: 8px;
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  position: static;
+  padding: 15px;
+  height: max-content;
+  width: 100vh;
+  margin-right: 45%;
+  margin-top: 11%;
+}
+
+.boxed {
+  padding: 8px;
+  width: 60vh;
+  top: 0%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 0 10px 1px #0d5dcc;
+  margin-bottom: 5%;
+}
+
+.outbox {
+  position: fixed;
+  font-size: 20px;
+  width: 58%;
+  height: 70%;
+  left: 40%;
+  background-color: aliceblue;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 1px #0d5dcc;
+  overflow: auto;
+}
+
+.outboxinbox {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  padding: 5%;
+  border-style: solid;
+  border-bottom-color: rgb(225, 217, 217);
+  border-left: rgba(125, 105, 105, 0);
+  border-top: rgba(125, 105, 105, 0);
+  border-right: rgba(125, 105, 105, 0);
+}
+
+.applybox {
+  position: relative;
+  top: 5px;
+  width: 115px;
+  letter-spacing: 1px;
+  height: 35px;
+  padding: 1.5px 10px;
+  border-radius: 8px;
+  background-color: rgb(66, 66, 130);
+  color: aliceblue;
+  margin-bottom: 5px;
+}
+
+.Aboutcompany {
+  position: absolute;
+  top: 5%;
+  margin-left: 64%;
+  width: max-content;
+  letter-spacing: 1px;
+  height: 35px;
+  padding: 1.5px 10px;
+  border-radius: 8px;
+  background-color: rgb(66, 66, 130);
+  color: aliceblue;
+  margin-bottom: 5px;
+
+}
+
+.nav-item {
+  float: right;
+}
+
+.outboxinbox2 {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  padding: 5%;
+  border-style: solid;
+  border-bottom-color: rgb(225, 217, 217);
+  border-left: rgba(125, 105, 105, 0);
+  border-top: rgba(125, 105, 105, 0);
+  border-right: rgba(125, 105, 105, 0);
+  overflow: auto;
+}
+
+.describe {
+  font-size: 15px;
+  margin-left: 26px;
+  text-align: justify;
+}
+
+.iconclr {
+  color: rgb(66, 66, 130);
+  padding-right: 5px;
+}
+
+
+.companylogo {
+  position: static;
+  margin-left: 3%;
+  width: 60px;
+  height: 62px;
+}
+
+.companylogooutbox {
+  position: relative;
+  left: -5px;
+  width: 60px;
+  height: 62px;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 9%;
+}

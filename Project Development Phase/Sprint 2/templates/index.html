@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Home</title>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap">
+	<!-- <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">-->
+	<link rel="stylesheet" href="../static/index.css">
+	<script>
+
+		function decodeHtml(html) {
+			var txt = document.createElement("textarea");
+			txt.innerHTML = html;
+			return txt.value;
+		}
+
+		function companydetails(obj) {
+			var cname = document.getElementById('cname')
+			var role = document.getElementById('role')
+			var salary = document.getElementById('salary')
+			var skill = document.getElementById('skill')
+			var ex = document.getElementById('ex')
+			var job_location = document.getElementById('job_location')
+			var vacancy = document.getElementById('vacancy')
+			var link = document.getElementById('link')
+			var logo = document.getElementById('logo')
+
+			var json = JSON.parse(decodeHtml('{{companies}}'));
+			var id = obj.getAttribute('id');
+			var clickedcompany = json.find(function (obj) {
+				return obj.cname === id;
+			});
+
+			console.log(clickedcompany)
+
+			cname.innerHTML = clickedcompany.cname
+			role.innerHTML = clickedcompany.role
+			salary.innerHTML = clickedcompany.salary
+			skill.innerHTML = clickedcompany.skill
+			ex.innerHTML = clickedcompany.ex
+			job_location.innerHTML = clickedcompany.job_location
+			vacancy.innerHTML = clickedcompany.vacancy
+			link.href = clickedcompany.link
+
+		}
+	</script>
+</head>
+
+<body>
+	<div class="navbar-wrapper">
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand text-dark h5" href="/home"><b>Hire Me!</b></a>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark h5" href="profile"><b>Profile</b></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark h5" href="logout"><b>Logout</b></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="topbar">
+		<div class="Searchbar">
+			<form class="searchform">
+				<input class="searchbox" type="text" placeholder="Job Role, Company Name or keyword">
+				<input class="submitbtn" type="submit">
+			</form>
+		</div>
+	</div>
+	<div class="container">
+		<div class='outbox'>
+			<div class="outboxinbox">
+				<spam>
+					<img class="companylogooutbox"
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9AadNHQhLzWdn6cJXt9abVHd0BoUUCpzc2pd_FlHJQP-maRVmMzXkWaIrJa71feyi9rE&usqp=CAU">
+				</spam>
+				<div style="color: rgb(66, 66, 130);" id="cname"><b>Company Name</b></div>
+				<div style="color: rgb(82, 82, 108); " id="role"><b>Role</b></div>
+				<div id="salary">Salary</div>
+				<div class="applybox"><b>Apply Job</b></div>
+				<div class="Aboutcompany"><b>About Company</b>
+					<a id="link" href="" target="_blank"></a>
+				</div>
+				</a>
+			</div>
+			<div class="outboxinbox2">
+				<div>
+					<ion-icon class="iconclr" name="newspaper-outline"></ion-icon><b>Job Description</b>
+
+					<p class="describe">Prepare and conduct UX research.
+						Outline audience personas according to brand, business and user requirements.
+						Visualize the user journey from start to finish and articulate it through experience design.
+						Prioritize content, functions and features according to strategic research.
+						Create and develop clean, end-to-end user experiences that meet project goals and objectives.
+						Deliver user flows.</p>
+				</div>
+				<div>
+					<ion-icon class="iconclr" name="book-outline"></ion-icon><b>Skills Required</b>
+					<ul>
+						<li class="describe" id="skill"></li>
+					</ul>
+				</div>
+				<div>
+					<ion-icon class="iconclr" name="bag-check-outline"></ion-icon><b>Experience</b>
+					<ul>
+						<li class="describe" id="ex"></li>
+					</ul>
+				</div>
+				<div>
+					<ion-icon class="iconclr" name="location-outline"></ion-icon><b>Job Location </b>
+					<ul>
+						<spam class="icon">
+						</spam>
+						<li class="describe" id="job_location"></li>
+					</ul>
+				</div>
+				<div>
+					<ion-icon class="iconclr" name="apps-outline"></ion-icon><b>Vacancy</b>
+					<ul>
+						<li class="describe" id="vacancy"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		{% for i in arr %}
+		<div class="boxed">
+			<div class="boxedcontent">
+				<spam>
+					<img class="companylogo"
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9AadNHQhLzWdn6cJXt9abVHd0BoUUCpzc2pd_FlHJQP-maRVmMzXkWaIrJa71feyi9rE&usqp=CAU">
+				</spam>
+				<li><b>Company Name : <button id='{{i.cname}}' style="border: none; background-color: transparent;color: blue;" onclick="companydetails(this)">{{i.cname}}</button></b>
+				</li>
+				<ul style="list-style:none;">
+					<li>Role : {{i.role}}</li>
+					<li>Experience: {{i.ex}}</li>
+					<li>Skill : {{i.skill}}</li>
+					<li>Vacancy : {{i.vacancy}}</li>
+					<li>Stream : {{i.stream}}</li>
+					<li>Job Location : {{i.job_location}}</li>
+					<li>Salary : {{i.salary}}</li>
+				</ul>
+			</div>
+		</div>
+		{% endfor %}
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</div>
+</body>
+
+</html>
