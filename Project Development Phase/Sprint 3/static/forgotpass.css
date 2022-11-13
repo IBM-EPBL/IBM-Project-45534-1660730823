@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+* {
+    color: #000000;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.2;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('Images/Building.jpg') no-repeat center;
+}
+
+.form-container {
+    display: flex;
+    height: 98vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container .form-wrap {
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    background-color: rgba(255, 255, 255, 0.644);
+    backdrop-filter: blur(1.5px);
+    width: 40%;
+    padding: 15px 20px;
+    height: auto;
+}
+
+.form-container .form-wrap h2 {
+    text-align: left;
+    margin: 0px 0px 20px;
+    font-size: 25px;
+}
+
+.form-container .form-wrap .form-box {
+    margin: 0px 0px 15px;
+}
+
+.form-container .form-wrap .form-box input {
+    margin: 0px 0px 20px;
+    padding: 10px 10px;
+    border-radius: 3px;
+    border: 1px solid #353535;
+    width: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.form-container .form-wrap .form-submit {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 0px;
+}
+
+
+.form-container .form-wrap .form-submit input {
+    padding: 4px 10px;
+    border: none;
+    border-radius: 2px;
+    background: #353535;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0px 0px 20px;
+}
+
+p {
+    margin: 10px 0px 0px;
+    text-align: center;
+    color: red;
+    font-size: 25px;
+}
+
+.box small {
+    color: red;
+    font-size: 20px;
+}
