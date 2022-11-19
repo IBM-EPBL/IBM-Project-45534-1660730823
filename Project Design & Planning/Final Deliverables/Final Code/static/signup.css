@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+
+* {
+    color: #000000;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.2;
+}
+
+label.checkbox-inline {
+    color: #ffffff;
+}
+
+#text {
+    color: #ffffff;
+}
+
+.container {
+    background: url('Images/Building.jpg') no-repeat center;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.form-control {
+    height: 40px;
+    box-shadow: none;
+    color: #030303;
+}
+
+.form-control:focus {
+    border-color: #5cb85c;
+}
+
+.box small {
+    color: red;
+}
+
+.form-control,
+.btn {
+    border-radius: 3px;
+}
+
+.signup-form {
+    width: 400px;
+    margin: 75px auto;
+    padding: 30px 30px;
+    background: rgba(251, 251, 251, 0.048);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.signup-form h2 {
+    color: #ffffff;
+    margin: 0 0 15px;
+    position: relative;
+    text-align: center;
+}
+
+.signup-form h2:before,
+.signup-form h2:after {
+    content: "";
+    height: 2px;
+    width: 30%;
+    background: #d4d4d4;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+}
+
+.signup-form h2:before {
+    left: 0;
+}
+
+.signup-form h2:after {
+    right: 0;
+}
+
+.signup-form .hint-text {
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.signup-form form {
+    margin-bottom: 7px;
+    padding: 30px;
+}
+
+.signup-form .form-group {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: medium;
+}
+
+.signup-form input[type="checkbox"] {
+    margin-top: 3px;
+}
+
+.signup-form .btn {
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 140px;
+    outline: none !important;
+}
+
+.signup-form .row div:first-child {
+    padding-right: 10px;
+}
+
+.signup-form .row div:last-child {
+    padding-left: 10px;
+}
+
+.signup-form a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.signup-form a:hover {
+    text-decoration: none;
+}
+
+.signup-form form a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+.signup-form form a:hover {
+    text-decoration: underline;
+}
+
+.signup-form .text-center {
+    position: relative;
+    color: #fff;
+    top: 0;
+}
+
+p {
+    color: #ffffff;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Job</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../static/apply.css">
+</head>
+<script>
+    // function redirectToApplySuccess() {
+
+    //     window.location.href = "/applysuccess"
+    // }
+</script>
+
+<body>
+    <div class="navbar-wrapper fixed">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand text-dark h5" href="/home"><b>Hire Me!</b></a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark h5" href="profile"><b>Profile</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark h5" href="logout"><b>Logout</b></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <form action="/applysuccess" method="post">
+        <div class="container rounded bg-white mt-5 mb-5">
+            <div class="row">
+                <div class="col">
+                    <div class="p-3 py-5">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="text-center"><b>Apply Job</b></h4>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-6"><label class="labels">First Name</label><input type="text"
+                                    class="form-control" placeholder="First name" name="first_name"
+                                    value="{{first_name}}" readonly>
+                            </div>
+                            <div class="col-md-6"><label class="labels">Lastname</label><input type="text"
+                                    class="form-control" name="last_name" placeholder="Lastname" value="{{last_name}}"
+                                    readonly>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12"><label class="labels">Mobile
+                                    Number</label><input type="text" class="form-control"
+                                    placeholder="Enter phone number" name="mobile_no" value="{{mobile_no}}" required>
+                            </div>
+                            <div class="col-md-12"><label class="labels">Zipcode</label><input type="text"
+                                    class="form-control" placeholder="Zipcode" name="zipcode" value="{{zipcode}}"
+                                    readonly>
+                            </div>
+                            <div class="col-md-12"><label class="labels">City</label><input type="text"
+                                    class="form-control" placeholder="Enter City" value="{{city}}" name="city" readonly>
+                            </div>
+                            <div class="col-md-12"><label class="labels">Email
+                                    ID</label><input type="text" class="form-control" name="email" value="{{email}}"
+                                    readonly>
+                            </div>
+                            <div class="col-md-12"><label class="labels">Education</label>
+                                <input type="text" class="form-control" name="education" value="{{education}}" readonly>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6"><label class="labels">Country</label>
+                                <input type="text" class="form-control" name="countries" value="{{countries}}" readonly>
+
+                            </div>
+                            <div class="col-md-6"><label class="labels">State</label>
+                                <input type="text" class="form-control" name="states" value="{{states}}" readonly>
+
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12"><label class="labels">Years Of Experience</label><input type="text"
+                                    class="form-control" name="experience" value="{{experience}}" readonly>
+                            </div>
+                            <div class="mt-5 text-center"><button class="btn btn-primary profile-button"
+                                    type="submit">Apply
+                                    Job</button></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

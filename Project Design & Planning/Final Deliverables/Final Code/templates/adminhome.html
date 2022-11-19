@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile</title>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/profile.css">
+</head>
+
+<body>
+	<div class="navbar-wrapper fixed">
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand text-dark h5" href="/adminhome">Home</a>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark h5" href="adminlogout">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+
+	<form action="/adminhome" method="post">
+		<div class="container rounded bg-white mt-5 mb-5">
+			<div class="row">
+				<div class="col-md-5 border-right">
+					<div class="p-3 py-5">
+						<div class="d-flex justify-content-between align-items-center mb-3">
+							<h4 class="text-right">Post Job</h4>
+						</div>
+						<div class="row mt-3">
+							<div class="col-md-12"><label class="labels">Company Name</label><input type="text"
+									class="form-control" placeholder="Enter Company Name" name="company_name" required>
+							</div>
+
+							<div class="col-md-12"><label class="labels">Role</label>
+								<select id="role" name="role" required>
+									<option value="">--Select a job title--</option>
+									<option value="Software Developer">Software Developer</option>
+									<option value="Web Developer">Web Developer</option>
+									<option value="Full Stack Developer">Full Stack Developer</option>
+									<option value="UI/UX Designer">UI/UX Designer</option>
+									<option value=".NET Developer">.NET Developer</option>
+									<option value="Firmware Engineer">Firmware Engineer</option>
+									<option value="Senior Software Developer">Senior Software Developer</option>
+									<option value="Embedded System Engineer">Embedded System Engineer</option>
+									<option value="Database Administrator">Database Administrator</option>
+									<option value="Data Scientist">Data Scientist</option>
+								</select>
+							</div>
+
+
+							<div class="col-md-12"><label class="labels">Skills Needed</label><select id="skill_1"
+									name="skill_1" onchange="getvalue(this.value);" required>
+									<option value="">--Select a Skill--</option>
+									<option value="Angular">Angular</option>
+									<option value="AngularJS">AngularJS</option>
+									<option value="ASP.NET">ASP.NET</option>
+									<option value="Azure DevOps">Azure DevOps</option>
+									<option value="Azure Machine Learning">Azure Machine Learning</option>
+									<option value="COBOL">COBOL</option>
+									<option value="CSS">CSS</option>
+									<option value="C">C</option>
+									<option value="C++">C++</option>
+									<option value="Embededd C">Embededd C</option>
+									<option value="Figma">Figma</option>
+									<option value="Fortran">Fortran</option>
+									<option value="HTML">HTML</option>
+									<option value="JavaScript">JavaScript</option>
+									<option value="Java">Java</option>
+									<option value="jQuery">jQuery</option>
+									<option value="Jupyter">Jupyter</option>
+									<option value="MongoDB">MongoDB</option>
+									<option value="MySQL">MySQL</option>
+									<option value="Node.js">Node.js</option>
+									<option value="Oracle">Oracle</option>
+									<option value="Photoshop">Photoshop</option>
+									<option value="Python">Python</option>
+									<option value="ReactJS">ReactJS</option>
+									<option value="Spring Boot">Spring Boot</option>
+									<option value="SQL Server">SQL Server</option>
+									<option value="TypeScript">TypeScript</option>
+									<option value="T-SQL">T-SQL</option>
+									<option value="Visual Basic .NET">Visual Basic .NET</option>
+									<option value="XD">XD</option>
+								</select>
+							</div>
+
+							<div class="col-md-12"><label class="labels">Skills Needed</label><select id="skill_2"
+									name="skill_2" onchange="getvalue(this.value);" required>
+									<option value="">--Select a Skill--</option>
+									<option value="Angular">Angular</option>
+									<option value="AngularJS">AngularJS</option>
+									<option value="ASP.NET">ASP.NET</option>
+									<option value="Azure DevOps">Azure DevOps</option>
+									<option value="Azure Machine Learning">Azure Machine Learning</option>
+									<option value="COBOL">COBOL</option>
+									<option value="CSS">CSS</option>
+									<option value="C">C</option>
+									<option value="C++">C++</option>
+									<option value="Embededd C">Embededd C</option>
+									<option value="Figma">Figma</option>
+									<option value="Fortran">Fortran</option>
+									<option value="HTML">HTML</option>
+									<option value="JavaScript">JavaScript</option>
+									<option value="Java">Java</option>
+									<option value="jQuery">jQuery</option>
+									<option value="Jupyter">Jupyter</option>
+									<option value="MongoDB">MongoDB</option>
+									<option value="MySQL">MySQL</option>
+									<option value="Node.js">Node.js</option>
+									<option value="Oracle">Oracle</option>
+									<option value="Photoshop">Photoshop</option>
+									<option value="Python">Python</option>
+									<option value="ReactJS">ReactJS</option>
+									<option value="Spring Boot">Spring Boot</option>
+									<option value="SQL Server">SQL Server</option>
+									<option value="TypeScript">TypeScript</option>
+									<option value="T-SQL">T-SQL</option>
+									<option value="Visual Basic .NET">Visual Basic .NET</option>
+									<option value="XD">XD</option>
+								</select>
+							</div>
+							<div class="col-md-12"><label class="labels">Skills Needed</label><select id="skill_3"
+									name="skill_3" required>
+									<option value="">--Select a Skill--</option>
+									<option value="Angular">Angular</option>
+									<option value="AngularJS">AngularJS</option>
+									<option value="ASP.NET">ASP.NET</option>
+									<option value="Azure DevOps">Azure DevOps</option>
+									<option value="Azure Machine Learning">Azure Machine Learning</option>
+									<option value="COBOL">COBOL</option>
+									<option value="CSS">CSS</option>
+									<option value="C">C</option>
+									<option value="C++">C++</option>
+									<option value="Embededd C">Embededd C</option>
+									<option value="Figma">Figma</option>
+									<option value="Fortran">Fortran</option>
+									<option value="HTML">HTML</option>
+									<option value="JavaScript">JavaScript</option>
+									<option value="Java">Java</option>
+									<option value="jQuery">jQuery</option>
+									<option value="Jupyter">Jupyter</option>
+									<option value="MongoDB">MongoDB</option>
+									<option value="MySQL">MySQL</option>
+									<option value="Node.js">Node.js</option>
+									<option value="Oracle">Oracle</option>
+									<option value="Photoshop">Photoshop</option>
+									<option value="Python">Python</option>
+									<option value="ReactJS">ReactJS</option>
+									<option value="Spring Boot">Spring Boot</option>
+									<option value="SQL Server">SQL Server</option>
+									<option value="TypeScript">TypeScript</option>
+									<option value="T-SQL">T-SQL</option>
+									<option value="Visual Basic .NET">Visual Basic .NET</option>
+									<option value="XD">XD</option>
+								</select>
+							</div>
+							<script>
+								function getvalue(skill_1, skill_2) {
+									if (skill_1 != '') {
+										$("#skill_2 option[value='" + skill_1 + "']").hide();
+										$("#skill_3 option[value='" + skill_1 + "']").hide();
+										$("#skill_3 option[value='" + skill_2 + "']").hide();
+									}
+								}
+							</script>
+
+							<div class="col-md-12"><label class="labels">Vacancy</label><input type="number"
+									class="form-control" placeholder="Enter vacancy" name="vacancy" required>
+							</div>
+
+							<div class="col-md-12"><label class="labels">Stream</label><input type="text"
+									class="form-control" placeholder="Enter Stream" name="stream" required>
+							</div>
+
+							<div class="col-md-12"><label class="labels">Job Location</label><input type="text"
+									class="form-control" placeholder="Enter Job Location" name="job_location" required>
+							</div>
+						</div>
+						<div class="mt-5 text-center"><button class="btn btn-primary profile-button"
+								type="submit">POST</button></div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="p-3 py-5">
+						<div class="d-flex justify-content-between align-items-center experience">
+						</div><br>
+						<div class="col-md-12"><label class="labels">Salary</label><input type="number"
+								class="form-control" placeholder="Enter Salary" name="salary" step="any" required>
+						</div>
+
+						<div class="col-md-12"><label class="labels">Experience</label>
+							<select id="experience" name="experience" required>
+								<option value="">--Years of Experience--</option>
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">2+</option>
+							</select>
+						</div>
+
+						<div class="col-md-12"><label class="labels">Company Website</label><input type="text"
+								class="form-control" placeholder="Paste Link Here" name="link" required>
+						</div>
+
+						<div class="col-md-12"><label class="labels">Company Logo</label><input type="text"
+								class="form-control" placeholder="Paste Link Here" name="logo" required>
+						</div>
+
+						<div class="col-md-12"><label class="labels">Description</label><textarea class="form-control"
+								placeholder="Please give a job description" name="description" required></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+
+</html>
