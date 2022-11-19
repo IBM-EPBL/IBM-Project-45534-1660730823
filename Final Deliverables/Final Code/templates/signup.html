@@ -1,0 +1,60 @@
+<hmtl>
+
+    <head>
+        <title>Signup</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+        <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+        <link rel="stylesheet" href="../static/signup.css">
+        <script src="../static/js/validation.js"></script>
+    </head>
+
+
+    <body>
+        <div class="container">
+            <div class="signup-form">
+                <form action="/verification" onsubmit="return validatepassword()" method="post">
+                    <h2>Register</h2>
+                    <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-6"><input type="text" class="form-control" name="first_name"
+                                    placeholder="First Name" required="required"></div>
+                            <div class="col-xs-6"><input type="text" class="form-control" name="last_name"
+                                    placeholder="Last Name" required="required"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                    </div>
+                    <div class="form-group">
+                        <div class="box">
+                            <input type="password" class="form-control" name="password" id="password"
+                                placeholder="Password" onkeyup="validatepassword()" required="required">
+                            <small id="password-error"></small>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="box">
+                            <input type="password" class="form-control" id='cpassword' name="confirm_password"
+                                onkeyup="validatepassword()" placeholder="Confirm Password" required="required">
+                            <small id="cpassword-error"></small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a
+                                href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                    </div>
+                    <div class="form-group">
+                        <p id="message"></p>
+                        <button type="submit" class="btn btn-success btn-lg btn-block">Register
+                            Now</button>
+                        <p>{{msg}}</p>
+                    </div>
+                </form>
+                <div class="text-center">Already have an account? <a href="login">Sign in</a></div>
+            </div>
+        </div>
+    </body>
+</hmtl>
